@@ -1,0 +1,15 @@
+#!/bin/sh
+
+#
+# Task file validator
+#
+# Currently, just calls pykwalify, however we could later anticipate
+# expanding to perform SHA1 commit title expansion and more complex
+# validation rules.
+# At that point, this could potentially become a python script and pull
+# in the pykwalify libraries to check internally.
+#
+
+TASKFILE=$1
+
+pykwalify -s projects/project.schema.yaml -d $TASKFILE
