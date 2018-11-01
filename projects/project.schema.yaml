@@ -67,14 +67,22 @@ mapping:
           desc: Free form URL reference # URL validation is *hard*
           type: str
 
-  parent:
-    desc: A reference to another topic key which must already exist
-    include: uuid
-
-  dependencies:
+  relationships:
+    desc: Relationships to other data items.
     sequence:
-    - include: uuid
-      unique: True
+    - mapping:
+        parent:
+          desc: A reference to another topic key which must already exist
+          include: uuid
+        depends:
+          desc: Items which must be closed before this item can be closed successfully
+          include: uuid
+        duplicates:
+          desc: A link to another task which refers to the same work item as this
+          include: uuid
+        blocks:
+          desc: Tasks prevented from progressing until this task is complete
+          include: uuid
 
   target-date:
     type: date

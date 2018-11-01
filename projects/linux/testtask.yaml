@@ -4,6 +4,12 @@ key: fedd3f9c-dc85-11e8-bfeb-834cd5092819
 assignee: Kieran
 status: New
 
+relationships:
+  - parent: 7d14ee32-ddf8-11e8-a473-d7a72abc7e28
+  - depends: 7d14f0c6-ddf8-11e8-a474-4b07d07bedaa
+  - depends: 7d14f1b6-ddf8-11e8-a475-fb7b5cfd5b9d
+  - blocks: 7d14f33c-ddf8-11e8-a477-6764765d08a6
+
 bsp-commits:
   - e0868bcfd529997cf98da1dd14bab8cb8175eda7
     # arm64: dts: r8a77990: Support IPMMU(MMU mode) for IPMMU-VP0 and IPMMU-VC0
