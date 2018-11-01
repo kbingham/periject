@@ -29,10 +29,6 @@ mapping:
     required: True
     enum: ['Core', 'IO', 'MM']
 
-  assignee:
-    type: str
-    required: True
-
   key:
     include: uuid
     required: True
@@ -43,8 +39,10 @@ mapping:
     enum: ['New', 'Active', 'Blocked', 'Paused', 'Done', 'Abandoned']
 
 # Optional Fields
-  assigneee:
+  assignee:
     type: str
+    enum: ['BSP', 'Geert', 'Jacopo', 'Kieran', 'Laurent', 'Magnus', 'Marek',
+           'Morimoto', 'Niklas', 'Shimoda', 'Ulrich', 'Wolfram']
 
   bsp-commits:
     desc: A sequence / list of related BSP commits
