@@ -14,6 +14,8 @@ upstream:
   - torvalds: 84df9525b0c27f3ebc2ebb1864fa62a97fdedb7d # Linux 4.19
   - torvalds: 6d9666fb78526a7728cc4954ec1da4c2b416753d # arm64: dts: r8a77965: Support IPMMU(MMU mode) for IPMMU-VP0 and IPMMU-VC0
   - next: e0868bcfd529997cf98da1dd14bab8cb8175eda7 # <automagically filled in text here>
+  - url: https://patchwork.linuxtv.org/patch/51928/ # [4/5] media: rcar-vin: Enable support for r8a774a1 - Patchwork
+  - pw.linuxtv: 51928 # [4/5] media: rcar-vin: Enable support for r8a774a1 - Patchwork
 
 comments:
   - Added a new thing

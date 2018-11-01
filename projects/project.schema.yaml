@@ -60,6 +60,12 @@ mapping:
         next:
           desc: https://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git/commit/?id=
           include: gitcommit
+        pw.linuxtv:
+          desc: https://patchwork.linuxtv.org/patch/
+          type: int
+        url:
+          desc: Free form URL reference # URL validation is *hard*
+          type: str
 
   parent:
     desc: A reference to another topic key which must already exist
