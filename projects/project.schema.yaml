@@ -50,18 +50,16 @@ mapping:
     sequence:
     - include: gitcommit
 
-  upstream-commits:
+  upstream:
     desc: References to upstream commits
     sequence:
     - mapping:
         torvalds:
           desc: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=
-          sequence:
-          - include: gitcommit
-        linux-next:
+          include: gitcommit
+        next:
           desc: https://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git/commit/?id=
-          sequence:
-          - include: gitcommit
+          include: gitcommit
 
   parent:
     desc: A reference to another topic key which must already exist
